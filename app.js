@@ -1,7 +1,7 @@
 import express, { json } from 'express'
 import { createMovieRouter } from './routes/movies.js'
 import { corsMiddleware } from './middlewares/cors.js'
-import { PORT } from './config.js'
+import { PORT } from './models/mysql/config.js'
 
 export const createApp = ({ movieModel }) => {
   const app = express()
